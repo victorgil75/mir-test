@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test MIR - Preparación Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 Test MIR</h1>
+            <p>Prepárate para el éxito en tu examen MIR</p>
+        </div>
+        
+        <div class="filters">
+            <div class="filters-row">
+                <div>
+                    <select id="especialidad">
+                        <option value="aleatorio">🎲 Preguntas Aleatorias</option>
+                        <option value="Anatomía">💀 Anatomía</option>
+<option value="Epidemiología y Estadística">📊 Epidemiología y Estadística</option>
+<option value="Reumatología">🦴 Reumatología</option>
+<option value="Medicina Preventiva">🏥 Medicina Preventiva</option>
+<option value="Hematología">🩸 Hematología</option>
+<option value="Farmacología">💊 Farmacología</option>
+<option value="Cirugía General">👨‍⚕️ Cirugía General</option>
+<option value="Anestesiología">💉 Anestesiología</option>
+<option value="Radiología">📷 Radiología</option>
+<option value="Pediatría">👨‍⚕️ Pediatría</option>
+<option value="Bioquímica">🧪 Bioquímica</option>
+<option value="Neurología y Neurocirugía">🧠 Neurología y Neurocirugía</option>
+<option value="Psiquiatría">🧠 Psiquiatría</option>
+<option value="Inmunología">🛡️ Inmunología</option>
+<option value="Genética">🧬 Genética</option>
+<option value="Fisiología">🧬 Fisiología</option>
+<option value="Geriatría">👴 Geriatría</option>
+<option value="Anatomía Patológica">🔬 Anatomía Patológica</option>
+<option value="Endocrinología">⚡ Endocrinología</option>
+<option value="Neumología">👨‍⚕️ Neumología</option>
+<option value="Dermatología">🧴 Dermatología</option>
+<option value="Urología">🚽 Urología</option>
+<option value="Oftalmología">👁️ Oftalmología</option>
+<option value="Medicina de Familia">👨‍👩‍👦 Medicina de Familia</option>
+<option value="Alergología">🤧 Alergología</option>
+<option value="Oncología">🎗️ Oncología</option>
+<option value="Cardiología">❤️ Cardiología</option>
+<option value="Otorrinolaringología">👂 Otorrinolaringología</option>
+<option value="Ginecología y Obstetricia">👨‍⚕️ Ginecología y Obstetricia</option>
+<option value="Nefrología">🫘 Nefrología</option>
+<option value="Bioética y Medicina Legal">⚖️ Bioética y Medicina Legal</option>
+<option value="Traumatología">🦿 Traumatología</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="number" id="tiempo" placeholder="Tiempo (segundos) por pregunta (opcional)">
+                </div>
+                <div style="flex:0 0 auto;">
+                    <button onclick="loadQuestions()">
+                        <i class="fas fa-play"></i> Comenzar Test
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="question-container">
+            <div class="welcome-message">
+                <h2>👋 ¡Bienvenido/a al simulador MIR!</h2>
+                <p>Prepárate para poner a prueba tus conocimientos:</p>
+                <ul>
+                    <li>⏱️ Puedes establecer un tiempo máximo por pregunta (en segundos). Si no lo estableces, no habrá límite.</li>
+                    <li>✅ Feedback inmediato</li>
+                    <li>📊 Análisis detallado de resultados y cálculo de tu nota MIR</li>
+                    <li>📝 Registro de preguntas para repasar</li>
+                    <li>⌚ Al final sabrás tu tiempo medio por pregunta</li>
+                </ul>
+                <p>Selecciona una especialidad o elige preguntas aleatorias para comenzar.</p>
+            </div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
